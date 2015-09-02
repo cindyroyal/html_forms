@@ -40,10 +40,13 @@ define('CHECK_REFERER', true);
 // To change the address the e-mail comes from use define('FROM', 'Example Name <email@example.com>');
 define('FROM', null);
 
-$referers = array('www.cindyroyal.net', 'cindyroyal.net', 'coding.cindyroyal.net', 'txstate.edu');
+$referers = array('www.cindyroyal.net', 'cindyroyal.net', 'coding.cindyroyal.net');
+
+//referers - use this area to include the domain or domains where you are hosting the form
 
 // $recipient_array format is $recipient_array = array('sometext'=>'email@example.com','asdf'=>'email2@example.com');
-$recipient_array = array();
+//Then in hidden fields use the short name you gave it ie type="hidden" name="recipient" value="cindy"
+$recipient_array = array('cindy'=>'croyal@txstate.edu');
 
 $valid_env = array('REMOTE_HOST', 'REMOTE_ADDR', 'REMOTE_USER', 'HTTP_USER_AGENT');
 
